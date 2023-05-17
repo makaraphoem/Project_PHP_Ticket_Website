@@ -1,0 +1,192 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef2f3;
+
+}
+
+#container-card
+{
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#container-card:hover img
+{
+    transform: scale(1.15);
+}
+#container-card img
+{
+    width: 100%;
+}
+#contant
+{
+    background-color: rgba(0,0,0, .7);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+}
+#contant h3
+{
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid #808080;
+    padding: 20px 10px;
+}
+#contant p
+{
+    padding: 20px 20px 15px 20px;
+
+}
+#btn-detail
+{
+
+    padding: 0 0 15px 60px ;
+    position: absolute;
+    bottom: -100%;
+    display: flex;
+    flex-direction: column;
+}
+#btn-detail button
+{
+    margin: 0 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+#btn-detail #see-ticket
+{
+    
+    color: #f5f5f5;
+}
+#btn-detail #more-information
+{
+    
+    background:  #f5f5f5;
+    color: #060606;
+}
+#btn-detail #see-ticket:hover
+{
+    background: rgb(153 27 27);
+    
+}
+#btn-detail #more-information:hover
+{
+    background: #060606;
+    color: #f5f5f5;
+}
+#container-card:hover #btn-detail
+{
+    bottom: 0;
+    cursor: pointer;
+}
+#container-card:hover #contant 
+{
+    top: 0;
+}
+
+
+/* banner style */
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+
+/* dialog  */
+
+
+dialog {
+    position: fixed;
+    top: 8vh;
+    left: 90%;
+    width: 12%;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 0;
+    overflow: hidden;
+ 
+}
+dialog section {
+    padding: 1rem;
+}
+
+dialog menu {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+
+/* style form create show */
+.-z-1 {
+    z-index: -1;
+  }
+
+  .origin-0 {
+    transform-origin: 0%;
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label,
+  textarea:focus ~ label,
+  textarea:not(:placeholder-shown) ~ label,
+  select:focus ~ label,
+  select:not([value='']):valid ~ label {
+    /* @apply transform; scale-75; -translate-y-6; */
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-scale-x: 0.75;
+    --tw-scale-y: 0.75;
+    --tw-translate-y: -1.5rem;
+  }
+
+  input:focus ~ label,
+  select:focus ~ label {
+    --tw-text-opacity: 1;
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+    left: 0px;
+  }
+#table,#th{
+    background: #000;
+    color:rgb(223, 19, 19);
+    
+}
+#th{
+    color: white;
+    font-size: 15px;
+}
+#table_row{
+    color: red;
+
+}
